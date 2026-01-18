@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import { Grid } from './components/Grid/Grid'
-import './App.css'
+import { Grid } from "./components/Grid/Grid";
+import "./App.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-     <Grid numberOfCards={9}/>
+      <ToastContainer />
+      <Grid numberOfCards={9} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
